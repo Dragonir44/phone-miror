@@ -1,0 +1,32 @@
+[Desktop Entry]
+Type=Application
+Name=Phone Mirror
+Name[fr]=Miroir Téléphone
+GenericName=Android screen mirroring
+GenericName[fr]=Miroir d'écran Android
+Comment=Mirror an Android phone or use its camera as a webcam (scrcpy, Wi-Fi or USB)
+Comment[fr]=Afficher l'écran du téléphone Android ou utiliser sa caméra comme webcam (scrcpy, Wi-Fi ou USB)
+Exec=phone-mirror --settings
+Icon=smartphone
+Terminal=false
+Categories=Utility;
+Keywords=scrcpy;android;phone;mirror;webcam;camera;telephone;
+Actions=mirror;webcam;settings;
+
+[Desktop Action mirror]
+Name=Mirror now
+Name[fr]=Miroir direct
+Icon=smartphone
+Exec=phone-mirror
+
+[Desktop Action webcam]
+Name=Webcam (phone camera)
+Name[fr]=Webcam (caméra du téléphone)
+Icon=camera-web
+Exec=phone-mirror --webcam
+
+[Desktop Action settings]
+Name=Settings
+Name[fr]=Réglages
+Icon=configure
+Exec=phone-mirror --settings
